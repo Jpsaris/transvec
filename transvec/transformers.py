@@ -106,7 +106,7 @@ class TranslationWordVectorizer(TransformerMixin, BaseEstimator):
 
         self.target = target
 
-        sample = target[next(iter(target.wv.vocab.keys()))]
+        sample = target[next(iter(target.index_to_key))]
         self.dim = len(sample)
         self.dtype = sample.dtype
 
