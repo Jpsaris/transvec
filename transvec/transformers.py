@@ -90,8 +90,8 @@ class TranslationWordVectorizer(TransformerMixin, BaseEstimator):
 
     def __init__(
         self,
-        target: "gensim.models.keyedvectors.Word2VecKeyedVectors",
-        *sources: "gensim.models.keyedvectors.Word2VecKeyedVectors",
+        target: "gensim.models.keyedvectors.KeyedVectors",
+        *sources: "gensim.models.keyedvectors.KeyedVectors",
         alpha: float = 1.0,
         max_iter: Optional[int] = None,
         tol: float = 0.001,
